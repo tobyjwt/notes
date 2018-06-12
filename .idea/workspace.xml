@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faac5bb9-82d1-4949-b31f-45d2fe7184d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/知道这20个正则表达式，能让你少写1,000行代码.md" beforeDir="false" afterPath="$PROJECT_DIR$/知道这20个正则表达式，能让你少写1,000行代码.md" afterDir="false" />
-    </list>
+    <list default="true" id="faac5bb9-82d1-4949-b31f-45d2fe7184d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -87,7 +85,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528809802223</updated>
-      <workItem from="1528809803502" duration="1592000" />
+      <workItem from="1528809803502" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="add books&#10;2018/6/12">
       <created>1528810302379</created>
@@ -124,7 +122,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1592000" />
+    <option name="totallyTimeSpent" value="1780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
