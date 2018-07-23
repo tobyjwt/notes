@@ -1,0 +1,65 @@
+module.exports = {
+  /*
+  ** Headers of the page
+  */
+  head: {
+    title: 'nuxt-demo',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  },
+  /*
+  ** Customize the progress bar color
+  */
+  loading: { color: '#3B8070' },
+  /*
+  ** Build configuration
+  */
+
+  // build: {
+  //   /*
+  //   ** Run ESLint on save
+  //   */
+  //   extend (config, { isDev, isClient }) {
+  //     if (isDev && isClient) {
+  //       config.module.rules.push({
+  //         enforce: 'pre',
+  //         test: /\.(js|vue)$/,
+  //         loader: 'eslint-loader',
+  //         exclude: /(node_modules)/
+  //       })
+  //     }
+  //   }
+  // }
+  // build: {
+  //   vender: [
+  //     'mint-ui'
+  //   ]
+  // },
+
+//---------引入mint ui使用的配置代码---------------
+//   babel:{
+//     "plugins": [["component", [
+//       {
+//         "libraryName": "mint-ui",
+//       },
+//       'transform-async-to-generator',
+//       'transform-runtime'
+//     ]]],
+//     comments: true
+//   },
+  plugins: [
+    { src: '~plugins/mint-ui', ssr: true }
+  ],
+  css: [
+// 全部引用的时候需要用到
+    'mint-ui/lib/style.css'
+  ]
+
+}
+
