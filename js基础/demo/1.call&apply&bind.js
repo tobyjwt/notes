@@ -16,6 +16,16 @@ Function.prototype.myApply = function (context, args) {
     return result;
 }
 
+Function.prototype.myBind = function (context, ...args) {
+    const self = this;
+    const fn = function () {
+        const params = args.concat(Array.prototype.slice.call(arguments));
+        return self.apply(this instanceof self ? this : context, params);
+    }
+    fn.prototype = Object.create(self.prototype);
+    return fn;
+}
+
 
 
 
@@ -33,3 +43,5 @@ console.log(sum.call(sourceObj, 111, 222));
 console.log(sum.myCall(sourceObj, 111, 222));
 console.log(sum.apply(sourceObj, [111, 222]));
 console.log(sum.myApply(sourceObj, [111, 222]));
+console.log(sum.bind(sourceObj, 111)(222));
+console.log(sum.myBind(sourceObj, 111)(222));
