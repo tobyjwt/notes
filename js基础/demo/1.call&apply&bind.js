@@ -17,18 +17,17 @@ Function.prototype.myApply = function (context, args) {
 }
 
 Function.prototype.myBind = function (context, ...args) {
-    const self = this;
+    const self = this; // 先将this保存
     const fn = function () {
         const params = args.concat(Array.prototype.slice.call(arguments));
-        return self.apply(this instanceof self ? this : context, params);
+        if (this instanceof self) {
+            context = this;
+        }
+        return self.apply(context, params);
     }
     fn.prototype = Object.create(self.prototype);
     return fn;
 }
-
-
-
-
 
 // test
 const sum = function (b, c) {
